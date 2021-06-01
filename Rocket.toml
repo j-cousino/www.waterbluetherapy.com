@@ -1,0 +1,10 @@
+[global]
+secret_key = "o5aMO6ha4B7m2E6jVE807XO2qYx0bE5+1CzFWnq1Fwk="
+
+[development]
+address = "0.0.0.0"
+port = 8443
+
+[development.tls]
+certs = "private/cert.pem"
+key = "private/key.pem"
