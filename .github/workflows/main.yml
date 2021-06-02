@@ -12,7 +12,7 @@ jobs:
           IFS=$'\n\t'
           # Check the code
           cargo build --all --frozen
-          cargo test -all --frozen
+          cargo test --all --frozen
 
       - name: Build the Docker image
         run: docker build -t website .

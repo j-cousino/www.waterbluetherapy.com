@@ -1,8 +1,0 @@
-[package]
-name = "www-soluforge-com"
-version = "0.1.0"
-authors = ["Jeff Cousino <j.cousino.consulting@gmail.com>"]
-edition = "2018"
-
-[dependencies]
-rocket = { version = "0.4", features = ["tls"] }
