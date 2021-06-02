@@ -11,8 +11,8 @@ jobs:
           set -euo pipefail
           IFS=$'\n\t'
           # Check the code
-          cargo build --all --frozen
-          cargo test --all --frozen
+          cargo build --all --locked
+          cargo test --all --locked
 
       - name: Build the Docker image
         run: docker build -t website .
