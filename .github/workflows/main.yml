@@ -7,9 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Check nightly versions
+      - name: Check nightly version used by the buildpack
         # Make sure buildpack is using the same toolchain
-        run: ci/check-nightly-versions.sh
+        run: ci/check-nightly-version.sh
         
       - name: Test
         run: |
