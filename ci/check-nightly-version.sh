@@ -1,8 +1,6 @@
 #!/bin/bash
 
-#
 # Copied from rust-lang/www.rust-lang.org, thanks
-#
 
 set -euo pipefail
 IFS=$'\n\t'
