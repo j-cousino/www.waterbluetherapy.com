@@ -7,14 +7,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Create RustConfig
-        run: |
-          set -euo pipefail
-          IFS=$'\n\t'
-          rust_config="VERSION="
-          rust_config=$rust_config$(cat rust-toolchain)
-          echo $rust_config > RustConfig
-          
+      - name: Check nightly versions
+        # Make sure buildpack is using the same toolchain
+        run: ci/check-nightly-version.sh
+        
       - name: Test
         run: |
           set -euo pipefail
