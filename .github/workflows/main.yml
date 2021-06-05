@@ -9,7 +9,7 @@ jobs:
 
       - name: Check nightly versions
         # Make sure buildpack is using the same toolchain
-        run: ci/check-nightly-version.sh
+        run: ci/check-nightly-versions.sh
         
       - name: Test
         run: |
