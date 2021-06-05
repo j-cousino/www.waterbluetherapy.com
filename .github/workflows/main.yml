@@ -6,6 +6,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Create RustConfig
+        run: |
+          set -euo pipefail
+          IFS=$'\n\t'
+          rust_config="VERSION="
+          rust_config=$rust_config$(cat rust-toolchain)
+          echo $rust_config > RustConfig
+          
       - name: Test
         run: |
           set -euo pipefail
