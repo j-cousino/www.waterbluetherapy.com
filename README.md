@@ -1,4 +1,4 @@
-# www.soluforge.com
-## Web app for soluforge
+# www.waterbluetherapy.com
+## Web app for waterbluetherapy
 
-![CI](https://github.com/j-cousino/www.soluforge.com/workflows/CI/badge.svg)
+![CI](https://github.com/j-cousino/www.waterbluetherapy.com/workflows/CI/badge.svg)
