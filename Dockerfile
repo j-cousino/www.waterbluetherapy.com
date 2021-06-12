@@ -32,7 +32,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     ca-certificates \
     tini
 
-COPY --from=build /build/target/release/www-soluforge-com /usr/local/bin/www-soluforge-com
+COPY --from=build /build/target/release/www-waterbluetherapy-com /usr/local/bin/www-waterbluetherapy-com
 
 WORKDIR /app
 COPY static /app/static/
@@ -41,4 +41,4 @@ ENV ROCKET_PORT 443
 ENV ROCKET_ENV prod
 
 # Use `tini` a small pid 1 to properly handle signals
-CMD ["tini", "--", "www-soluforge-com"]
+CMD ["tini", "--", "www-waterbluetherapy-com"]
